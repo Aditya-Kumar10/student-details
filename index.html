@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Student Registration System</h1>
+
+    <div class="container">
+      <!-- Left panel -->
+      <div class="left-panel">
+        <form id="studentForm">
+          <label for="name">Student Name:</label>
+          <input type="text" id="name" required />
+
+          <label for="studentId">Student ID:</label>
+          <input type="text" id="studentId" required />
+
+          <label for="class">Class:</label>
+          <input type="text" id="class" required />
+
+          <label for="rollNo">Roll No.:</label>
+          <input type="text" id="rollNo" required />
+
+          <button type="submit">Add</button>
+        </form>
+      </div>
+
+      <!-- Right panel -->
+      <div class="right-panel">
+        <div class="table-wrapper">
+          <table id="studentTable">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Class</th>
+                <th>Roll No.</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
